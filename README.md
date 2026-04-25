@@ -54,4 +54,4 @@ This challenge will help me:
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/your-username/30-days-js-projects.git
+git clone https://github.com/DhananjayMukhiya/30-days-js-projects.git
