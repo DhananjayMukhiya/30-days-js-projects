@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product Card</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Icons -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!-- Left Image -->
+        <div class="product-gallery">
+
+            <img src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?q=80&w=900&auto=format&fit=crop"
+                class="product-img" id="productImg">
+
+            <div class="dots">
+                <span class="dot active" data-image="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?q=80&w=900&auto=format&fit=crop"></span>
+
+                <span class="dot" data-image="https://images.unsplash.com/photo-1483985988355-763728e1935b?q=80&w=900&auto=format&fit=crop"></span>
+
+                <span class="dot" data-image="https://images.unsplash.com/photo-1496747611176-843222e1e57c?q=80&w=900&auto=format&fit=crop"></span>
+            </div>
+
+        </div>
+
+        <!-- Right Content -->
+        <div class="product-details">
+
+            <h1>Casual T Shirt</h1>
+
+            <h2>$15.00</h2>
+
+            <h4>30% OFF</h4>
+
+            <p>
+                Wrangler is an American manufacturer of jeans and
+                other clothing items, particularly workwear.
+            </p>
+
+            <!-- Sizes -->
+            <div class="size-select">
+
+                <p>Size</p>
+
+                <div class="sizes">
+                    <span>S</span>
+                    <span>M</span>
+                    <span class="active-size">L</span>
+                    <span>XL</span>
+                    <span>XXL</span>
+                </div>
+
+            </div>
+
+            <!-- Colors -->
+            <div class="color-select">
+
+                <p>Color</p>
+
+                <div class="colors">
+
+                    <span class="color red active-color"></span>
+                    <span class="color green"></span>
+                    <span class="color blue"></span>
+                    <span class="color pink"></span>
+
+                </div>
+
+            </div>
+
+            <!-- Quantity -->
+            <div class="quantity">
+
+                <p>Quantity</p>
+
+                <input type="number" value="1" min="1">
+
+            </div>
+
+            <button>Buy Now</button>
+
+        </div>
+
+    </div>
+
+    <!-- JS -->
+    <script src="script.js"></script>
+</body>
+
+</html>

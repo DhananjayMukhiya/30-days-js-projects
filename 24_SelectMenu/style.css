@@ -1,0 +1,152 @@
+  * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Poppins", sans-serif;
+  }
+
+  body {
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: radial-gradient(circle at top left, #1f1f1f, #0b0b0b);
+      overflow: hidden;
+  }
+
+  .select-menu {
+      width: 340px;
+      position: relative;
+  }
+
+  .select-btn {
+      background: rgba(255, 255, 255, 0.06);
+      backdrop-filter: blur(12px);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      padding: 18px 22px;
+      border-radius: 18px;
+
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      cursor: pointer;
+
+      color: white;
+
+      box-shadow:
+          0 10px 30px rgba(0, 0, 0, 0.4),
+          inset 0 1px 1px rgba(255, 255, 255, 0.05);
+
+      transition: 0.3s ease;
+  }
+
+  .select-btn:hover {
+      transform: translateY(-3px);
+      border-color: rgba(255, 255, 255, 0.15);
+  }
+
+  .left {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+  }
+
+  .left i {
+      font-size: 22px;
+      color: #8b5cf6;
+  }
+
+  .left span {
+      font-size: 16px;
+      font-weight: 500;
+  }
+
+  .arrow {
+      transition: 0.3s;
+      color: #aaa;
+  }
+
+  .arrow.rotate {
+      transform: rotate(180deg);
+  }
+
+  /* Dropdown */
+
+  .options {
+      margin-top: 14px;
+
+      background: rgba(20, 20, 20, 0.95);
+
+      border: 1px solid rgba(255, 255, 255, 0.06);
+
+      border-radius: 18px;
+
+      overflow: hidden;
+
+      opacity: 0;
+      visibility: hidden;
+      transform: translateY(-10px);
+
+      transition: 0.3s ease;
+
+      box-shadow:
+          0 20px 40px rgba(0, 0, 0, 0.5);
+  }
+
+  .options.active {
+      opacity: 1;
+      visibility: visible;
+      transform: translateY(0);
+  }
+
+  .option {
+      padding: 16px 20px;
+
+      display: flex;
+      align-items: center;
+      gap: 15px;
+
+      cursor: pointer;
+
+      color: white;
+
+      transition: 0.3s;
+  }
+
+  .option:hover {
+      background: rgba(255, 255, 255, 0.05);
+      padding-left: 28px;
+  }
+
+  .option i {
+      font-size: 22px;
+      width: 25px;
+  }
+
+  .option span {
+      font-size: 15px;
+      font-weight: 400;
+  }
+
+  /* Brand Colors */
+
+  .instagram {
+      color: #e1306c;
+  }
+
+  .youtube {
+      color: #ff0000;
+  }
+
+  .facebook {
+      color: #1877f2;
+  }
+
+  .twitter {
+      color: #1da1f2;
+  }
+
+  .linkedin {
+      color: #0a66c2;
+  }
